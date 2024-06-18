@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/Javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Conversor de Moedas</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="currencyConverter">
+                    <div class="form-group">
+                        <label for="valor">Valor:</label>
+                        <input type="number" class="form-control" id="valor" step="0.01" min="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="origem">De:</label>
+                        <select class="form-control" id="origem">
+                            <option value="USD">Dólar Americano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="JPY">Iene</option>
+                            <option value="BRL">Real</option>
+                            <option value="MXN">Peso Mexicano</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="para">Para:</label>
+                        <select class="form-control" id="para">
+                            <option value="USD">Dólar Americano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="JPY">Iene</option>
+                            <option value="BRL">Real</option>
+                            <option value="MXN">Peso Mexicano</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block" id="Conversor" onclick="convertCurrency()">Converter</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div id="resultado" class="alert alert-info text-center" role="alert"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</body>
+</html>
